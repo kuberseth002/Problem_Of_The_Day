@@ -19,3 +19,12 @@ for day in days:
             attendance[student] = 1
 
 print(f"Total Attendance:{attendance}")
+
+
+
+
+
+
+
+
+
