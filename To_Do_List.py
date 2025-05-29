@@ -1,31 +1,22 @@
 lst = []
 
-lst1 = input("Enter task1:")
-lst2 = input("Enter task2:")
-lst3 = input("Enter task3:")
-lst4 = input("Enter task4:")
+lst1 = input("Enter task1: ")
+lst2 = input("Enter task2: ")
+lst3 = input("Enter task3: ")
+lst4 = input("Enter task4: ")
 
+def add_task(task):
+    if task not in lst:
+        lst.append(task)
+        print("task added:", task)
+    else:
+        print("it already exists:", task)
 
-#Adding
-if lst1 not in lst:
-    lst.append(lst1)
-    print("task added:", lst1)
-else:
-    print("it already exist:", lst1)
+add_task(lst1)
+add_task(lst2)
+add_task(lst3)
+add_task(lst4)
 
-if lst2 not in lst:
-    lst.append(lst2)
-    print("task added:", lst2)
-else:
-    print("it already exist:", lst2)
-
-if lst2 not in lst:
-    lst.append(lst2)
-    print("task added:", lst2)
-else:
-    print("it already exists:", lst2)
-
-# Removing
 if lst1 in lst:
     lst.remove(lst1)
     print("removed task:", lst1)
@@ -39,9 +30,8 @@ else:
     print("task not found:", lst2)
 
 if len(lst) > 0:
-    print("\n Current Task List:")
-    for lst in sorted(lst):
-        print("-", lst)
+    print("\nCurrent Task List:")
+    for task in sorted(lst):
+        print("-", task)
 else:
-    print("\n Error: No tasks in the list!")
-
+    print("\nError: No tasks in the list!")
