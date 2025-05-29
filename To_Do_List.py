@@ -3,10 +3,8 @@ tasks = []
 def add_task(task: str):
     """
     Add a new task to the tasks list if it doesn't already exist.
-
     Args:
         task (str): The task to be added.
-        
     Prints:
         Confirmation message whether the task was added or already exists.
     """
@@ -19,10 +17,8 @@ def add_task(task: str):
 def remove_task(task: str):
     """
     Remove a task from the tasks list if it exists.
-
     Args:
         task (str): The task to be removed.
-
     Prints:
         Confirmation message whether the task was removed or not found.
     """
