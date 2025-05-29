@@ -23,8 +23,3 @@ print(f"Total Attendance:{attendance}")
 
 
 
-
-
-
-
-
