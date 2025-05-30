@@ -104,5 +104,5 @@ if __name__ == "__main__":
     return_book("Can't Hurt Me")
     return_book("Can't Hurt Me")  
     
-    print("\n📘 Borrowing 'Invisible Man':")
+    print("\n Borrowing 'Invisible Man':")
     borrow_book("Invisible Man")
