@@ -84,24 +84,25 @@ def print_book(book):
     print(f"'{book['title']}' by {book['author']} ({book['genre']}) - {status}")
 
 if __name__ == "__main__":
-    # calling  all the functions
+    # calling  all function
     
-    add_book("1984", "George Orwell", "Dystopian")
-    add_book("The Hobbit", "J.R.R. Tolkien", "Fantasy")
-    add_book("Pride and Prejudice", "Jane Austen", "Romance")
+    add_book("Atomic Habits", "James Clear", "Self-Improvement")
+    add_book("Think and Grow Rich", "Napoleon Hill", "Motivation")
+    add_book("Deep Work", "Cal Newport", "Productivity")
+    add_book("Can't Hurt Me", "David Goggins", "Memoir")
 
-    print("\n search by author 'Orwell':")
-    results = search_books("Orwell", "author")
+    print("\n Search by author 'Goggins':")
+    results = search_books("Goggins", "author")
     for book in results:
         print_book(book)
 
-    print("\n borrowing '1984':")
-    borrow_book("1984")
-    borrow_book("1984") 
+    print("\n Borrowing 'Can't Hurt Me':")
+    borrow_book("Can't Hurt Me")
+    borrow_book("Can't Hurt Me")  
 
-    print("\n returning '1984':")
-    return_book("1984")
-    return_book("1984")  
-
-    print("\n borrowing 'invisible man':")
+    print("\n Returning 'Can't Hurt Me':")
+    return_book("Can't Hurt Me")
+    return_book("Can't Hurt Me")  
+    
+    print("\n📘 Borrowing 'Invisible Man':")
     borrow_book("Invisible Man")
